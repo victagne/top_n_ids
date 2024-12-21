@@ -1,6 +1,18 @@
 # top_n_ids
 This project demonstrates how to process large datasets with FastAPI and Python. It includes an API for processing uploaded data and returning the top `n` numerical IDs with the highest numerical values. The project also includes a script to generate test data for use with the FastAPI app.
 
+## Table of Contents
+
+- [Requirements](#Requirements)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Makefile](#Makefile)
+- [Example Flow](#Example-Flow)
+- [Discussion](#Discussion)
+- [Potential Optimizations](#Potential-Optimizations)
+- [Conclusion](#Conclusion)
+- [Author](#Author)
+
 ## Requirements
 Before running the project, ensure that you have the following installed:
 - Python 3.9 or higher
@@ -80,7 +92,7 @@ To remove the generated data files and the `data` directory, run:
 make clean
 ```
 
-## Makefile Targets
+## Makefile
 - `make run`: Starts the FastAPI application.
 - `make generate`: Generates test data using the `data_generator.py` script.
 - `make request N=<number>`: Sends a `POST` request to the FastAPI app with the specified `N` value to get the top `N` numerical IDs.
